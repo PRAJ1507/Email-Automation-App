@@ -1,0 +1,21 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "pydantic>=2.0",
+  "sqlalchemy>=2.0",
+  "psycopg[binary]>=3.0",
+  "alembic",
+  "python-multipart",
+  "pandas",
+  "openpyxl",
+  "sendgrid",
+  "langchain>=1.0.0",
+  "langchain-groq",
+  "pydantic-settings",
+]

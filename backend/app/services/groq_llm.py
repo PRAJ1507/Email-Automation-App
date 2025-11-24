@@ -1,0 +1,12 @@
+from langchain_groq import ChatGroq
+
+from ..config import settings
+
+
+def get_groq_llm():
+    return ChatGroq(
+        groq_api_key=settings.GROQ_API_KEY,
+        model_name=settings.GROQ_MODEL_NAME,
+        temperature=0.7,
+        max_tokens=512,
+    )
