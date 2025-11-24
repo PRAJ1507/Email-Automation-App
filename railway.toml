@@ -1,0 +1,7 @@
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+# Tell Railway to use the backend folder as the root
+root = "backend"
+startCommand = "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
