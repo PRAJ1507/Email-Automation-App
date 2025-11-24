@@ -28,7 +28,7 @@ export async function listEmails(campaignId, status) {
   try {
     const params = { campaign_id: campaignId };
     if (status) params.status = status;
-    const res = await axios.get(`${BASE_URL}/emails`, { params });
+    const res = await axios.get(`${BASE_URL}/emails/`, { params });
     return res.data;
   } catch (err) {
     throw new Error(err.response?.data?.detail || err.response?.data || err.message);
