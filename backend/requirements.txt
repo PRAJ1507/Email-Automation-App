@@ -11,3 +11,4 @@ sendgrid
 langchain
 langchain-groq
 pydantic-settings
+psycopg2-binary
